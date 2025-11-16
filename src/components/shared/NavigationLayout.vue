@@ -1,7 +1,7 @@
 <script setup>
 import { ref, computed, watch, nextTick } from 'vue'
 import { useRoute } from 'vue-router'
-import { navigationItems } from '@/constants/Navigation'
+import { privateNavigationItems } from '@/constants/PrivateNavigation'
 
 const route = useRoute()
 const activeIndicator = ref()
@@ -9,7 +9,7 @@ const activeIndicator = ref()
 // Computed que calcula qual item está ativo baseado na rota atual
 const activeIndex = computed(() => {
 	// Encontra o índice do item que corresponde à rota atual
-	return navigationItems.findIndex((item) => item.route === route.path)
+	return privateNavigationItems.findIndex((item) => item.route === route.path)
 })
 
 // Função que atualiza a posição do indicador deslizante
@@ -53,15 +53,27 @@ watch(() => route.path, updateIndicatorPosition, { immediate: true })
 <template>
 	<nav class="absolute left-1/2 bottom-6 -translate-x-1/2 bg-neutral-900 rounded-full">
 		<!-- Indicador ativo com transição -->
-		<div ref="activeIndicator" class="absolute top-1 size-9 bg-neutral-800 rounded-full transition-transform duration-200 ease-out pointer-events-none"></div>
+		<div
+			ref="activeIndicator"
+			class="absolute top-1 size-9 bg-neutral-800 rounded-full transition-transform duration-200 ease-out pointer-events-none"
+		></div>
 
 		<ul class="flex items-center gap-1 p-1 relative z-10">
-			<li v-for="(item, index) in navigationItems" :key="item.id" :data-nav-item="index">
+			<li
+				v-for="(item, index) in privateNavigationItems"
+				:key="item.id"
+				:data-nav-item="index"
+			>
 				<router-link
 					:to="item.route"
 					:title="item.label"
-					class="rounded-full size-9 grid place-content-center">
-					<span v-html="item.svg" :class="$route.path === item.route ? 'text-white' : 'text-neutral-400'" class="transition-colors duration-200"></span>
+					class="rounded-full size-9 grid place-content-center"
+				>
+					<span
+						v-html="item.svg"
+						:class="$route.path === item.route ? 'text-white' : 'text-neutral-400'"
+						class="transition-colors duration-200"
+					></span>
 				</router-link>
 			</li>
 		</ul>

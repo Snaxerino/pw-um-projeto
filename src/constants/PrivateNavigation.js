@@ -1,4 +1,4 @@
-export const navigationItems = [
+export const privateNavigationItems = [
 	{
 		id: 'dashboard',
 		label: 'dashboard',

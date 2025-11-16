@@ -1,5 +1,5 @@
 <script setup>
-import NavigationLayout from './NavigationLayout.vue';
+import NavigationLayout from '../shared/NavigationLayout.vue'
 </script>
 
 <template>
