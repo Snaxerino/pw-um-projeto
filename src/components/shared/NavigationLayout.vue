@@ -55,7 +55,7 @@ watch(() => route.path, updateIndicatorPosition, { immediate: true })
 		<!-- Indicador ativo com transição -->
 		<div
 			ref="activeIndicator"
-			class="absolute top-1 size-9 bg-neutral-800 rounded-full transition-transform duration-200 ease-out pointer-events-none"
+			class="absolute left-1 top-1 size-9 bg-neutral-800 rounded-full transition-transform duration-200 ease-out pointer-events-none"
 		></div>
 
 		<ul class="flex items-center gap-1 p-1 relative z-10">

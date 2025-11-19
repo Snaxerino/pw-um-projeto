@@ -32,18 +32,18 @@ const router = createRouter({
 		{
 			path: '/log-in',
 			name: 'log-in',
-			component: () => import('../views/public/LogInPage.vue'),
+			component: () => import('../views/auth/LogInPage.vue'),
 		},
 		{
 			path: '/get-started',
 			name: 'get-started',
-			component: () => import('../views/public/GetStartedPage.vue'),
+			component: () => import('../views/auth/GetStartedPage.vue'),
 		},
 		// private
 		{
 			path: '/dashboard',
 			name: 'dashboard',
-			component: () => import('@/views/DashboardPage.vue'),
+			component: () => import('@/views/private/DashboardPage.vue'),
 		},
 	],
 })

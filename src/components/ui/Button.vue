@@ -25,8 +25,7 @@ const attrs = useAttrs()
 const baseClasses =
 	'px-4 py-2 rounded-full font-semibold whitespace-nowrap text-sm ease-out duration-200'
 const variantClasses = {
-	primary:
-		'text-white bg-linear-to-b from-[#FF6900] to-[#F54900] hover:opacity-90 text-shadow-[0_1px_2px] text-shadow-zinc-950/24 inset-shadow-[0_1px_0_0] inset-shadow-orange-400',
+	primary:'selection:bg-white/15 text-white bg-linear-to-b from-[#FF6900] to-[#F54900] hover:opacity-90 text-shadow-[0_1px_2px] text-shadow-zinc-950/24 inset-shadow-[0_1px_0_0] inset-shadow-orange-400',
 	secondary: 'text-zinc-400 hover:bg-zinc-800/60 hover:text-white',
 	tertiary: 'text-white hover:bg-white/12 border border-transparent hover:border-white/8',
 	white: '',
