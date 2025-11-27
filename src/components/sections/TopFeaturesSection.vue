@@ -3,8 +3,6 @@ import { ref, onMounted, onUnmounted, computed, nextTick } from 'vue'
 import { topFeatures } from '@/constants/TopFeatures'
 import TopFeatureCard from './TopFeatureCard.vue'
 
-// ⏱️ ALTERE AQUI O TEMPO DE EXIBIÇÃO DE CADA FEATURE (em milissegundos)
-// Exemplo: 3000 = 3 segundos, 5000 = 5 segundos, 2000 = 2 segundos
 const FEATURE_DURATION_MS = 5000
 
 // Inicia com -1 para forçar a animação inicial
@@ -41,7 +39,7 @@ onUnmounted(() => {
 
 <template>
 	<div class="px-8 w-full relative mt-28">
-		<div class="absolute left-1/2 -translate-x-1/2 -top-30 bg-orange-500/8 blur-[100px] w-232 h-60 rounded-full z-20"></div>
+		<div class="absolute left-1/2 -translate-x-1/2 -top-30 bg-orange-500/8 blur-[100px] w-232 h-60 rounded-full"></div>
 		<div class="isolate z-100 max-w-5xl m-auto aspect-[14.4/9] bg-linear-to-b to-orange-500 from-orange-400 p-4 inset-shadow-[0_1px_0_0] inset-shadow-orange-400 rounded-4xl">
 			<div class="w-full h-full ring-8 ring-white/36 rounded-2xl bg-white flex items-center justify-center relative overflow-hidden">
 				<img

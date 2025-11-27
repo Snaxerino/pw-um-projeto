@@ -1,5 +1,5 @@
 <script setup>
-import PublicHeader from '../shared/PublicHeader.vue'
+import PublicHeader from '../shared/PublicHeader/PublicHeader.vue'
 </script>
 
 <template>

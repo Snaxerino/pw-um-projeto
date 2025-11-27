@@ -14,8 +14,8 @@ import Button from '../ui/Button.vue';
 		</h1>
 		<p class="text-zinc-400 font-medium pt-5 w-[358px] text-balance">Monitor your workouts, set goals, and track your results. All in one place.</p>
 		<div class="flex gap-2 justify-center pt-6">
-			<Button variant="secondary" to="/log-in">Log In</Button>
 			<Button to="/get-started">Get Started</Button>
+			<Button variant="secondary" to="/pricing">Pricing</Button>
 		</div>
 	</div>
 </template>

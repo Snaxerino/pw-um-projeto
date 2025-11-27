@@ -1,8 +1,8 @@
 <script setup>
-	import logo from '../../assets/imgs/logo.svg';
-	import { publicNavigationItems } from '@/constants/PublicNavigation.js';
-import Button from '../ui/Button.vue';
-import MenuButton from './PublicHeader/MenuButton.vue';
+import logo from '@/assets/imgs/logo.svg';
+import { publicNavigationItems } from '@/constants/PublicNavigation.js';
+import Button from '@/components/ui/Button.vue';
+import MenuButton from '@/components/shared/PublicHeader/MenuButton.vue';
 </script>
 
 <template>
