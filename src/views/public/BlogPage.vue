@@ -4,6 +4,6 @@ import PublicLayout from '@/components/layouts/PublicLayout.vue';
 
 <template>
 	<PublicLayout>
-		
+		<h1>Blog</h1>
 	</PublicLayout>
 </template>

@@ -5,6 +5,6 @@ import PublicHeader from '../shared/PublicHeader/PublicHeader.vue'
 <template>
 	<PublicHeader />
 	<main>
-		<slot> </slot>
+		<slot></slot>
 	</main>
 </template>

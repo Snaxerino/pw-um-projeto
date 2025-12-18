@@ -1,0 +1,70 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "João Silva",
+      "email": "joao@example.com",
+      "password": "password123"
+    },
+    {
+      "id": 2,
+      "name": "Maria Santos",
+      "email": "maria@example.com",
+      "password": "password123"
+    },
+    {
+      "id": 3,
+      "name": "Pedro Costa",
+      "email": "pedro@example.com",
+      "password": "password123"
+    },
+    {
+      "name": "rodrigo",
+      "email": "rodrigo@example.com",
+      "password": "rodrigo",
+      "id": 4
+    },
+    {
+      "name": "marcio",
+      "email": "marcio@gmail.com",
+      "password": "marcio",
+      "id": 5
+    },
+    {
+      "name": "pedro tiago",
+      "email": "tiago@pedro.com",
+      "password": "tiagoo",
+      "id": 6
+    },
+    {
+      "name": "teste",
+      "email": "teste@gmail.com",
+      "password": "teste123",
+      "id": 7
+    },
+    {
+      "name": "root",
+      "email": "root@gmail.com",
+      "password": "rootroot",
+      "id": 8
+    },
+    {
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "password": "admin123",
+      "id": 9
+    },
+    {
+      "name": "paulo graça",
+      "email": "paulo@gmail.com",
+      "password": "paulo123",
+      "id": 10
+    },
+    {
+      "name": "carlosguima",
+      "email": "carlosguima@gmail.com",
+      "password": "guimaadmin",
+      "id": 11
+    }
+  ]
+}

@@ -5,6 +5,6 @@ import PrivateHeader from '@/components/shared/PrivateHeader.vue'
 
 <template>
 	<PrivateLayout>
-		<PrivateHeader pageName="Dashboard"/>
+		<PrivateHeader pageName="Nutrition"/>
 	</PrivateLayout>
 </template>

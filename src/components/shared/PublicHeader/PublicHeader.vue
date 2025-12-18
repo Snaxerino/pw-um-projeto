@@ -1,8 +1,23 @@
 <script setup>
+import { onMounted } from 'vue'
+import { useRouter } from 'vue-router'
 import logo from '@/assets/imgs/logo.svg';
 import { publicNavigationItems } from '@/constants/PublicNavigation.js';
 import Button from '@/components/ui/Button.vue';
 import MenuButton from '@/components/shared/PublicHeader/MenuButton.vue';
+import { useAuthStore } from '@/stores/auth';
+
+const router = useRouter()
+const authStore = useAuthStore()
+
+onMounted(async () => {
+	await authStore.initializeUsers()
+})
+
+const handleLogout = () => {
+	authStore.logout()
+	router.push('/')
+}
 </script>
 
 <template>
@@ -24,7 +39,11 @@ import MenuButton from '@/components/shared/PublicHeader/MenuButton.vue';
 					</li>
 				</ul>
 			</nav>
-			<div class="w-full gap-2 justify-end hidden lg:flex">
+			<div class="w-full gap-2 justify-end hidden lg:flex items-center" v-if="authStore.isAuthenticated">
+				<Button variant="secondary" @click="handleLogout">Logout</Button>
+				<Button to="/dashboard">Dashboard</Button>
+			</div>
+			<div class="w-full gap-2 justify-end hidden lg:flex items-center" v-else>
 				<Button variant="secondary" to="/log-in">Log In</Button>
 				<Button to="/get-started">Get started</Button>
 			</div>
